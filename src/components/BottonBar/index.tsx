@@ -1,9 +1,9 @@
 import React, {useCallback} from 'react';
 import {TouchableOpacity, View} from 'react-native';
 import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons';
 import Styles from './style';
 import {trackComponent, trackButton} from '../../utils/trackTestID';
-// import Icon from '../CustomIcon';
 
 const nameForTesting = 'bottombar';
 const CustomTabBar: React.FC<BottomTabBarProps> = (
@@ -21,14 +21,13 @@ const CustomTabBar: React.FC<BottomTabBarProps> = (
   const renderIcon = (index: number) => {
     if (index === 0) {
       return (
-        <View style={{flexDirection: 'row'}}>
+        <View style={Styles.tabcontainer}>
           <TouchableOpacity
             accessibilityRole="button"
             testID={trackButton(nameForTesting, 'tab_0')}
             onPress={() => onPress(state.routes[0])}
             style={Styles.tabbar}>
-            {/* <Icon name="paw_full" width={20} height={20} /> */}
-            <View style={{width: 20, height: 20, backgroundColor: 'red'}} />
+            <MaterialCommunityIcons name="home" color="black" size={26} />
           </TouchableOpacity>
           <TouchableOpacity
             accessibilityRole="button"

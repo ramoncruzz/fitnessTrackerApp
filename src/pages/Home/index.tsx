@@ -1,5 +1,6 @@
 import React from 'react';
-import {SafeAreaView, View} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import {Div} from 'react-native-magnus';
 
 import {trackPageView} from '../../utils/trackTestID';
 
@@ -9,9 +10,10 @@ const namePageForTesting = 'home';
 const Home: React.FC = (): JSX.Element => {
   return (
     <SafeAreaView style={Styles.page}>
-      <View
+      <Div
         testID={trackPageView(namePageForTesting, 'page')}
-        style={Styles.container}
+        flex={1}
+        bg="green"
       />
     </SafeAreaView>
   );

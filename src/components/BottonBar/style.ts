@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  tabcontainer: {flexDirection: 'row'},
   container: {
     flexDirection: 'row',
     marginBottom: 90,
