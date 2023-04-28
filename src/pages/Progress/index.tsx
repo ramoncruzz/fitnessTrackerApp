@@ -3,8 +3,8 @@ import {Div} from 'react-native-magnus';
 
 import {trackPageView} from '../../utils/trackTestID';
 
-const namePageForTesting = 'login';
-const Login: React.FC = (): JSX.Element => {
+const namePageForTesting = 'progress';
+const Progress: React.FC = (): JSX.Element => {
   return (
     <Div
       testID={trackPageView(namePageForTesting, 'page')}
@@ -14,4 +14,4 @@ const Login: React.FC = (): JSX.Element => {
   );
 };
 
-export default Login;
+export default Progress;

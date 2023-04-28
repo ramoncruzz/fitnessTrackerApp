@@ -1,20 +1,17 @@
 import React from 'react';
-import {SafeAreaView, View} from 'react-native';
+import {Div} from 'react-native-magnus';
 
 import {trackPageView} from '../../utils/trackTestID';
 
-import Styles from './styles';
-
 const namePageForTesting = 'workouts';
-const Workouts: React.FC = (): JSX.Element => {
+const Workout: React.FC = (): JSX.Element => {
   return (
-    <SafeAreaView style={Styles.page}>
-      <View
-        testID={trackPageView(namePageForTesting, 'page')}
-        style={Styles.container}
-      />
-    </SafeAreaView>
+    <Div
+      testID={trackPageView(namePageForTesting, 'page')}
+      flex={1}
+      bg="indigo100"
+    />
   );
 };
 
-export default Workouts;
+export default Workout;

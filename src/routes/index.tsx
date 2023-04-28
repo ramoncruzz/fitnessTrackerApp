@@ -4,7 +4,7 @@ import {StatusBar} from 'react-native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {NavigationContainer} from '@react-navigation/native';
-import {Home, Workouts, Profile} from '../pages';
+import {Workouts, Progress, Profile} from '../pages';
 import {ThemeProvider} from 'react-native-magnus';
 import Styles from './styles';
 
@@ -17,7 +17,7 @@ const RootStack = () => (
     barStyle={Styles.tabBar}>
     <Tab.Screen
       name="Workout"
-      component={Home}
+      component={Workouts}
       options={{
         tabBarLabel: 'Workout',
         tabBarIcon: ({color}) => (
@@ -27,7 +27,7 @@ const RootStack = () => (
     />
     <Tab.Screen
       name="Progress"
-      component={Workouts}
+      component={Progress}
       options={{
         tabBarLabel: 'Progress',
         tabBarIcon: ({color}) => (
