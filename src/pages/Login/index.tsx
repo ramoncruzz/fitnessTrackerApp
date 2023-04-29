@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {Div} from 'react-native-magnus';
 
 import {trackPageView} from '../../utils/trackTestID';

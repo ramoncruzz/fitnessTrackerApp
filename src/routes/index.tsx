@@ -7,6 +7,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {Workouts, Progress, Profile} from '../pages';
 import {ThemeProvider} from 'react-native-magnus';
 import Styles from './styles';
+import {AppContext} from '../store';
+import {useAppContext} from '../hooks';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -48,12 +50,17 @@ const RootStack = () => (
   </Tab.Navigator>
 );
 
-const AppNavigator = () => (
-  <ThemeProvider>
-    <NavigationContainer>
-      <StatusBar barStyle="default" backgroundColor="transparent" />
-      <RootStack />
-    </NavigationContainer>
-  </ThemeProvider>
-);
+const AppNavigator = () => {
+  const {context} = useAppContext();
+  return (
+    <ThemeProvider>
+      <AppContext.Provider value={context}>
+        <NavigationContainer>
+          <StatusBar barStyle="default" backgroundColor="transparent" />
+          <RootStack />
+        </NavigationContainer>
+      </AppContext.Provider>
+    </ThemeProvider>
+  );
+};
 export default AppNavigator;
