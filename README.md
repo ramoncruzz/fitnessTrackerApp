@@ -31,7 +31,9 @@ so it was not chosen for the project;
 search of exercises by type of muscle as well as the level of difficulty, each exercise contains an explanation of instructions on how to perform 
 each exercise and even offers links to instructional videos , this api was chosen for the project.
 
-Finally, the Google Firebase Tool was chosen to integrate with the project, according to Google "Firebase is a set of back-end cloud computing services and application development platforms provided by Google. It hosts databases, services, authentication and integration for a variety of applications including Android, iOS, JavaScript, Node.js, Java, Unity, PHP and C++". The free plan perfectly contemplates an app like Fitness Tracker, the chosen tools were:
+Finally, the Google Firebase Tool was chosen to integrate with the project, according to Google 
+>"Firebase is a set of back-end cloud computing services and application development platforms provided by Google. It hosts databases, services, authentication and integration for a variety of applications including Android, iOS, JavaScript, Node.js, Java, Unity, PHP and C++". 
+The free plan perfectly contemplates an app like Fitness Tracker, the chosen tools were:
 
 - Remote Config: For secure storage of sensitive credentials and environment information;
 - Cloud Firestore: To provide the database;
