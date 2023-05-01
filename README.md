@@ -107,7 +107,7 @@ and execute: `yarn install`, `cd ios/`, `pod install`, `cd ..`
 
 > [ios]: `yarn ios` > [android]: `yarn android`
 
-## _Suggestions of what should be done_
+## _Suggestions of what can be done_
 
 This project is not finished, it has an initial structure aimed at organization and maintenance, for completion it would be necessary to carry out the following activities:
 
